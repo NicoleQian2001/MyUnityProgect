@@ -35,7 +35,7 @@ public class EnemyController : MonoBehaviour
     void UpdateDirection()
     {
         if (speed != 0)
-            transform.localScale = new Vector3(Mathf.Sign(speed), transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(Mathf.Sign(speed) * 5, transform.localScale.y, transform.localScale.z);
     }
 
     void UpdateMovement()
